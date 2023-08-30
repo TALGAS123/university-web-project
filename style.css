@@ -1,0 +1,158 @@
+/* container-section-start */
+*{margin: 0; padding: 0; box-sizing: border-box;}
+a{text-decoration: none;}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.top{
+    width: 100%;
+    height: 100px;
+    background: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo_area{
+    width: 30%;
+}
+.logo_area a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 25px;
+}
+
+.logo_area a img{
+    width: 70px;
+}
+
+.logo_area a h1{
+    color: black;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 15px;
+    float: left;
+}
+/* container-section-end */
+
+
+
+/* menu-section-start */
+.menu_area{
+    width: 40%;
+    float: right;
+}
+
+.menu_area ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu_area ul li{
+    position: relative;
+
+}
+
+.menu_area ul li::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: black;
+    bottom: -5px;
+    left: 0;
+    transition: .5s all ease-in-out;
+}
+
+.menu_area ul li:hover:after{
+    width: 100%;
+}
+
+.menu_area ul li a{
+    color: #9f1e0d;
+    font-family: lato;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 40px;
+    transition: 0.3s all ease-in-out;
+}
+
+.menu_area ul li a:hover{
+    color: black;
+}
+/* menu-section-end */
+
+
+
+/* info-section-start */
+.info{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.info h1{
+    color: #00bf;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 5px;
+
+    padding: 0px 50px;
+
+
+}
+
+.info p{
+    padding: 0px 20px;
+    background: transparent;
+    color: black;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: beige;
+    
+}
+
+.btn button{
+    padding: 20px 40px;
+    background: transparent;
+    border: 5px solid red;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn button::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: aqua;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: .5s all ease-in-out;
+}
+
+.btn button:hover:after{
+    width: 100%;
+}
+/* info-section-end */
